@@ -7,9 +7,9 @@
 <head>
 <meta charset="UTF-8">
 <title>写文章</title>
-<link rel="icon" href="http://localhost:8080/DouBan/icon/douban_favicon.ico" type="image/x-icon">
+<link rel="icon" href="http://47.102.212.18/iDouBan/icon/iDouBan_favicon.ico" type="image/x-icon">
 <!-- 样式初始化 -->
-<link rel="stylesheet" type="text/css" href="http://localhost:8080/DouBan/css/init.css">
+<link rel="stylesheet" type="text/css" href="http://47.102.212.18/iDouBan/css/init.css">
 <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 
 <script type="text/javascript">
@@ -452,7 +452,7 @@
 		<div id="nav-inner">
 			<!-- 放置logo的地方 -->
 			<div id="nav-logo">
-					<img alt="豆瓣-文章编辑-logo" src="http://localhost:8080/DouBan/image/文章编辑器_豆瓣LOGO.jpg" width=60px  height=40px >
+					<img alt="豆瓣-文章编辑-logo" src="http://47.102.212.18/iDouBan/image/文章编辑器_豆瓣LOGO.jpg" width=60px  height=40px >
 			</div>
 			<!-- 写文章的这三个字，当做导航栏标头 -->
 			<div id="nav-label-div">
@@ -526,7 +526,7 @@
 						</form>
 					</div>
 				
-				<form action="http://localhost:8080/DouBan/ArticleEditServlet?method=edit_article" method="post" id="onSubmit" style="display: none;">
+				<form action="http://47.102.212.18/iDouBan/ArticleEditServlet?method=edit_article" method="post" id="onSubmit" style="display: none;">
 					<div>
 						<!-- 隐藏表单，用于传输数据-文章标题处--即textarea -->
 						<input type="hidden" id="edit-title" name = "title" value="" placeholder="写标题">
@@ -567,7 +567,7 @@
 					<a href="javascript:void(0);" onclick="transform()" id="back-edit-href">X</a>
 				</div>
 				<!-- 分组的表单 -->
-				<form action="/DouBan/ArticleShowServlet?method=article_show&article_id=${a.articleId}"  id = "groups-form">
+				<form action="/iDouBan/ArticleShowServlet?method=article_show&article_id=${a.articleId}"  id = "groups-form">
 						<div id="groups-input-wrapper">
 							<div id="groups-input-container">
 								<!-- 给用户填写要分组的名称 --禁止输入空格-->
@@ -704,7 +704,7 @@
 		/* 设置xmlHttpRequest对象的回调函数 */
 		xmlHttpRequest.onreadystatechange = callback ;
 		// 异步方式为true
-		xmlHttpRequest.open("post","http://localhost:8080/DouBan/UploadServlet",true);
+		xmlHttpRequest.open("post","http://47.102.212.18/iDouBan/UploadServlet",true);
 		/* 
 		//设置post方式的头信息--文件上传application/x-www-form-urlencoded  multipart/form-data --文件上传不能加这个标头设置
 		xmlHttpRequest.setRequestHeader("Content-Type"," multipart/form-data"); */

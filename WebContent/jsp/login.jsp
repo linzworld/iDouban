@@ -6,12 +6,12 @@
 <head>
 <meta charset="UTF-8">
 <title>登录豆瓣</title>
-<link rel="icon" href="http://localhost:8080/DouBan/icon/douban_favicon.ico" type="image/x-icon">
+<link rel="icon" href="http://47.102.212.18/iDouBan/icon/iDouBan_favicon.ico" type="image/x-icon">
 
 <style type="text/css">
 body {
 	margin: 0;
-	background-image: url('http://localhost:8080/DouBan/portrait/登录背景设置.jpg');  
+	background-image: url('http://47.102.212.18/iDouBan/portrait/登录背景设置.jpg');
 	background-repeat:no-repeat;
         background-position:0% 0%;
 	background-size:contain;
@@ -213,7 +213,7 @@ padding-left: 10px;
 
 
 </style>
-<form action="/DouBan/LoginServlet" method="post" id="login_form">
+<form action="/iDouBan/LoginServlet" method="post" id="login_form">
 <%-- <font color="red">${requestScope.message}</font> --%>
 <div id="login">
 		<div ><h1 id="header_h1">登录豆瓣</h1>
@@ -235,7 +235,7 @@ padding-left: 10px;
 		<div class="verify_inner">
 			 	<input type="text" name="image"  placeholder="请输入验证码" id="verify_code">
 		
-				<img src="/DouBan/VerifyCodeServlet" width="80" height ="42" id="verify_pic">	
+				<img src="/iDouBan/VerifyCodeServlet" width="80" height ="42" id="verify_pic">
 		</div>
 		</div>
 			 
@@ -258,8 +258,8 @@ padding-left: 10px;
 		<!-- 自动登录的功能 -->
 		
 		<div>
-			    <a href="http://localhost:8080/DouBan/jsp/register.jsp" id="login_bottom_find"><font color=blue>忘记密码</font></a>
-				<a href="http://localhost:8080/DouBan/jsp/register.jsp" id="login_bottom_sign"><font color=blue>注册账号</font></a>
+			    <a href="http://47.102.212.18/iDouBan/jsp/register.jsp" id="login_bottom_find"><font color=blue>忘记密码</font></a>
+				<a href="http://47.102.212.18/iDouBan/jsp/register.jsp" id="login_bottom_sign"><font color=blue>注册账号</font></a>
 	    </div>
 	    <!-- 表单输入数据给后台，返回的错误的消息提示功能 -->
 	    <div id="msg" class="login_level">
@@ -276,7 +276,7 @@ padding-left: 10px;
 <!--  自动登录按钮被点击后 非空判断  -->
 <c:if test="${not empty cookie.auto.value}">
 <!-- 重定位到登陆界面 -->
-	 <c:redirect url="http://localhost:8080/DouBan/jsp/alter.jsp" /> 
+	 <c:redirect url="http://47.102.212.18/iDouBan/jsp/alter.jsp" />
 </c:if>
 
 
@@ -304,7 +304,7 @@ padding-left: 10px;
 	        //该方法先获取其标签img 再对应的是第一个标签（下标从0开始）
 	        //根据系统时间在点击之后改变验证码
 	        document.getElementsByTagName("img")[0].src =
-	            "/DouBan/VerifyCodeServlet?time=" + new Date().getTime();
+	            "/iDouBan/VerifyCodeServlet?time=" + new Date().getTime();
 	    	};
 	</script>
 

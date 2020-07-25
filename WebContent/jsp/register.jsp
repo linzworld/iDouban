@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>注册</title>
-<link rel="icon" href="http://localhost:8080/DouBan/icon/douban_favicon.ico" type="image/x-icon">
+<link rel="icon" href="http://47.102.212.18/iDouBan/icon/iDouBan_favicon.ico" type="image/x-icon">
 </head>
 <style type="text/css">
  body{
@@ -96,7 +96,7 @@
 
 <body>
 
-	<form action="/DouBan/RegisterServlet" method = "post"  id="register_form">
+	<form action="/iDouBan/RegisterServlet" method = "post"  id="register_form">
 		<div id="register">
 			<div style="height: 60px;">
 				<h1>注册账号</h1>
@@ -111,7 +111,7 @@
 				<input type = "password"  id="upwd1" name ="upwd1" placeholder="请再次输入密码"  onblur="isRepeat()"/><br/>
 				
 				<input type = "button" id="entry" value = "注册"  onclick="return check()"><br/>
-			<a href="http://localhost:8080/DouBan/jsp/login.jsp"><font color=blue>已有帐号？登录</font></a>
+			<a href="http://47.102.212.18/iDouBan/jsp/login.jsp"><font color=blue>已有帐号？登录</font></a>
 			 <!-- 表单输入数据给后台，返回的错误的消息提示功能 -->
 			<div id="msg" class="register_level">
 			    <!-- 提示信息 -->

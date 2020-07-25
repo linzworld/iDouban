@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 /**
- * @Description 将得到的图片文件名转化为图片在项目中的绝对地址 ="http://localhost:8080/DouBan/image/
+ * @Description 将得到的图片文件名转化为图片在项目中的绝对地址 ="http://47.102.212.18/iDouBan/image/
  * @author 林泽鸿
  * @time 2019年4月21日 下午4:17:00
  */
@@ -16,7 +16,7 @@ public class ImageUrl
 	/**
 	 * 项目名的目录+"/"
 	 */
-	private static  String guide = "http://localhost:8080/DouBan/image/";
+	private static  String guide = "http://47.102.212.18/iDouBan/image/";
 	private static Map<String, String> map =  new HashMap<>();
 
 	/**
@@ -41,7 +41,7 @@ public class ImageUrl
 	
 			
 	/**
-	 * @Description 字符串的拼接 加上项目名目录----- “http://localhost:8080/DouBan/image/ "+ "时间戳"+"随机数" + "." + "文件后缀名"
+	 * @Description 字符串的拼接 加上项目名目录----- “http://47.102.212.18/iDouBan/image/ "+ "时间戳"+"随机数" + "." + "文件后缀名"
 	 * @param filename 原本的文件名
 	 * @return 文件名和文件存放的地址
 	 */

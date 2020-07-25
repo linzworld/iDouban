@@ -6,11 +6,11 @@
 <head>
 <meta charset="UTF-8">
 <title>所有人</title>
-<link rel="icon" href="http://localhost:8080/DouBan/icon/douban_favicon.ico" type="image/x-icon">
+<link rel="icon" href="http://47.102.212.18/iDouBan/icon/iDouBan_favicon.ico" type="image/x-icon">
 
 <!-- 显示所有用户的页面 -->
 
- <link rel="stylesheet" type="text/css" href="http://localhost:8080/DouBan/css/everyone.css">
+ <link rel="stylesheet" type="text/css" href="http://47.102.212.18/iDouBan/css/everyone.css">
 <style type="text/css">
 /*发送豆邮的按钮*/
 #send_doumail{
@@ -34,23 +34,23 @@
 			<nav id="first">
 				<div id="first_menu">
 					<!-- 跳到servlet，对用户的cookie进行注销 -->
-				    <a  href="http://localhost:8080/DouBan/ClearLoginServlet">退出登录</a>
+				    <a  href="http://47.102.212.18/iDouBan/ClearLoginServlet">退出登录</a>
 				    <!-- 相对于端口号的相对路径 -->
-					<a  href="http://localhost:8080/DouBan/jsp/alter.jsp">账号管理</a>
-					<a  href="http://localhost:8080/DouBan/jsp/my_page.jsp">个人主页</a>
+					<a  href="http://47.102.212.18/iDouBan/jsp/alter.jsp">账号管理</a>
+					<a  href="http://47.102.212.18/iDouBan/jsp/my_page.jsp">个人主页</a>
 					
-					<a href="/DouBan/DoumailServlet?method=my_doumail_list">豆邮</a>
+					<a href="/iDouBan/DoumailServlet?method=my_doumail_list">豆邮</a>
 					
-					<a href="/DouBan/FriendListServlet?method=blacklist_list">黑名单</a>
-					<a href="/DouBan/FriendListServlet?method=attention_list">我的关注</a>
-					<a href="/DouBan/FriendListServlet?method=friend_list">我的好友</a>
+					<a href="/iDouBan/FriendListServlet?method=blacklist_list">黑名单</a>
+					<a href="/iDouBan/FriendListServlet?method=attention_list">我的关注</a>
+					<a href="/iDouBan/FriendListServlet?method=friend_list">我的好友</a>
 					<!-- 先跳转servlet 查询第一页的所有人信息 -->
-					<a href="/DouBan/EveryoneListServlet?method=everyone_list">所有人</a>
+					<a href="/iDouBan/EveryoneListServlet?method=everyone_list">所有人</a>
 					<!-- 编辑文章 -->
-					<a href="http://localhost:8080/DouBan/jsp/article_edit.jsp" target="_blank">写文章</a>
-					<a href="/DouBan/ArticleListServlet?method=article_list">所有文章</a>
-					<a href="/DouBan/ArticleListServlet?method=my_article_list" >我的文章</a>
-					<a href="/DouBan/ArticleListServlet?method=my_collection_list">我的收藏</a>
+					<a href="http://47.102.212.18/iDouBan/jsp/article_edit.jsp" target="_blank">写文章</a>
+					<a href="/iDouBan/ArticleListServlet?method=article_list">所有文章</a>
+					<a href="/iDouBan/ArticleListServlet?method=my_article_list" >我的文章</a>
+					<a href="/iDouBan/ArticleListServlet?method=my_collection_list">我的收藏</a>
 				</div>
 			</nav>
 			<!-- 第二个导航栏 -->
@@ -58,14 +58,14 @@
 					<nav  id="second_menu">
 						<!-- logo部分 -->
 							<div class="logo">
-							 	<img alt="豆瓣logo" src="http://localhost:8080/DouBan/image/豆瓣首页logo.jpg" width=175px height=58px >
+							 	<img alt="豆瓣logo" src="http://47.102.212.18/iDouBan/image/豆瓣首页logo.jpg" width=175px height=58px >
 							</div>
 						<!-- 导航栏部分_可选择部分 -->
 							<div class="navbar">
 								<ul>
 									<li><a href="#">首页</a></li>
-									<li><a href="http://localhost:8080/DouBan/jsp/my_page.jsp">个人主页</a></li>
-									<li><a href="/DouBan/ArticleListServlet?method=article_list">浏览发现</a></li>
+									<li><a href="http://47.102.212.18/iDouBan/jsp/my_page.jsp">个人主页</a></li>
+									<li><a href="/iDouBan/ArticleListServlet?method=article_list">浏览发现</a></li>
 								</ul>	
 							</div>
 							<!-- 搜索框部分 -->
@@ -105,7 +105,7 @@
 						 			<!-- 豆邮的发送功能 -->
 							 		<div id="send_doumail">
 										<!-- 跳转到豆邮的详情---所有有关双方的豆邮 -->
-										<a href="/DouBan/DoumailServlet?method=doumail_show&to_user_id=${u.userId}&nickname=${u.nickname}" target="_blank" style="color:black">
+										<a href="/iDouBan/DoumailServlet?method=doumail_show&to_user_id=${u.userId}&nickname=${u.nickname}" target="_blank" style="color:black">
 											 发豆邮
 										</a>
 									</div>

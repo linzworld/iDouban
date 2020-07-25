@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>文章内容</title>
-<link rel="icon" href="http://localhost:8080/DouBan/icon/douban_favicon.ico" type="image/x-icon">
+<link rel="icon" href="http://47.102.212.18/iDouBan/icon/iDouBan_favicon.ico" type="image/x-icon">
 
 <!-- 
 	文章的显示页面
@@ -149,7 +149,7 @@
 			/* background-color: pink; */
 				float:left;
 				/*搜素按钮的图片*/
-				background: #FFFFFF url(http://localhost:8080/DouBan/image/01.png) center center no-repeat;
+				background: #FFFFFF url(http://47.102.212.18/iDouBan/image/01.png) center center no-repeat;
 				background-size:15px 15px;
 		}
 		/*放置主要的页面内容*/
@@ -364,23 +364,23 @@ textarea{
 			<nav id="first">
 				<div id="first_menu">
 					<!-- 跳到servlet，对用户的cookie进行注销 -->
-				    <a  href="http://localhost:8080/DouBan/ClearLoginServlet">退出登录</a>
+				    <a  href="http://47.102.212.18/iDouBan/ClearLoginServlet">退出登录</a>
 				    <!-- 相对于端口号的相对路径 -->
-					<a  href="http://localhost:8080/DouBan/jsp/alter.jsp">账号管理</a>
-					<a  href="http://localhost:8080/DouBan/jsp/my_page.jsp">个人主页</a>
+					<a  href="http://47.102.212.18/iDouBan/jsp/alter.jsp">账号管理</a>
+					<a  href="http://47.102.212.18/iDouBan/jsp/my_page.jsp">个人主页</a>
 					
-					<a href="/DouBan/DoumailServlet?method=my_doumail_list">豆邮</a>
+					<a href="/iDouBan/DoumailServlet?method=my_doumail_list">豆邮</a>
 					
-					<a href="/DouBan/FriendListServlet?method=blacklist_list">黑名单</a>
-					<a href="/DouBan/FriendListServlet?method=attention_list">我的关注</a>
-					<a href="/DouBan/FriendListServlet?method=friend_list">我的好友</a>
+					<a href="/iDouBan/FriendListServlet?method=blacklist_list">黑名单</a>
+					<a href="/iDouBan/FriendListServlet?method=attention_list">我的关注</a>
+					<a href="/iDouBan/FriendListServlet?method=friend_list">我的好友</a>
 					<!-- 先跳转servlet 查询第一页的所有人信息 -->
-					<a href="/DouBan/EveryoneListServlet?method=everyone_list">所有人</a>
+					<a href="/iDouBan/EveryoneListServlet?method=everyone_list">所有人</a>
 					<!-- 编辑文章 -->
-					<a href="http://localhost:8080/DouBan/jsp/article_edit.jsp" target="_blank">写文章</a>
-					<a href="/DouBan/ArticleListServlet?method=article_list">所有文章</a>
-					<a href="/DouBan/ArticleListServlet?method=my_article_list" >我的文章</a>
-					<a href="/DouBan/ArticleListServlet?method=my_collection_list">我的收藏</a>
+					<a href="http://47.102.212.18/iDouBan/jsp/article_edit.jsp" target="_blank">写文章</a>
+					<a href="/iDouBan/ArticleListServlet?method=article_list">所有文章</a>
+					<a href="/iDouBan/ArticleListServlet?method=my_article_list" >我的文章</a>
+					<a href="/iDouBan/ArticleListServlet?method=my_collection_list">我的收藏</a>
 				</div>
 			</nav>
 			<!-- 第二个导航栏 -->
@@ -388,14 +388,14 @@ textarea{
 					<nav  id="second_menu">
 						<!-- logo部分 -->
 							<div class="logo">
-							 	<img alt="豆瓣logo" src="http://localhost:8080/DouBan/image/豆瓣首页logo.jpg" width=175px height=58px >
+							 	<img alt="豆瓣logo" src="http://47.102.212.18/iDouBan/image/豆瓣首页logo.jpg" width=175px height=58px >
 							</div>
 						<!-- 导航栏部分_可选择部分 -->
 							<div class="navbar">
 								<ul>
 									<li><a href="#">首页</a></li>
-									<li><a href="http://localhost:8080/DouBan/jsp/my_page.jsp">个人主页</a></li>
-									<li><a href="/DouBan/ArticleListServlet?method=article_list">浏览发现</a></li>
+									<li><a href="http://47.102.212.18/iDouBan/jsp/my_page.jsp">个人主页</a></li>
+									<li><a href="/iDouBan/ArticleListServlet?method=article_list">浏览发现</a></li>
 								</ul>	
 							</div>
 							<!-- 搜索框部分 -->
@@ -448,7 +448,7 @@ textarea{
 											     <div class="title">
 											     
 											     		<!--文章跳转链接 -->
-												        <a href="/DouBan/ArticleShowServlet?method=article_show&article_id=${a.articleId}" target="_blank" style="color:black">
+												        <a href="/iDouBan/ArticleShowServlet?method=article_show&article_id=${a.articleId}" target="_blank" style="color:black">
 												    	
 												        </a>
 											      </div>
@@ -470,24 +470,24 @@ textarea{
 									        <div class = "bottom_inner_div">
 									        <!-- 文章点赞 -->
 									        <c:if test="${requestScope.starStatus == '已点赞文章' }"> 
-											  <a href="/DouBan/ArticleShowServlet?pre_method=article_star_cancel&method=article_show&article_id=${requestScope.article.articleId}" class="user_operation_btn" id="" >${requestScope.article.starNum}取消点赞</a>
+											  <a href="/iDouBan/ArticleShowServlet?pre_method=article_star_cancel&method=article_show&article_id=${requestScope.article.articleId}" class="user_operation_btn" id="" >${requestScope.article.starNum}取消点赞</a>
 											</c:if> 
 									        <c:if test="${requestScope.starStatus == '未点赞文章' }"> 
-											  <a href="/DouBan/ArticleShowServlet?pre_method=article_star&method=article_show&article_id=${requestScope.article.articleId}" class="user_operation_btn" id="" >${requestScope.article.starNum}点赞</a>
+											  <a href="/iDouBan/ArticleShowServlet?pre_method=article_star&method=article_show&article_id=${requestScope.article.articleId}" class="user_operation_btn" id="" >${requestScope.article.starNum}点赞</a>
 											</c:if> 
 									         <!-- 文章收藏 -->
 									        <c:if test="${requestScope.collectionStatus == '已收藏文章' }"> 
-											  <a href="/DouBan/ArticleShowServlet?pre_method=article_collection_cancel&method=article_show&article_id=${requestScope.article.articleId}" class="user_operation_btn" id="" >${requestScope.article.collectionNum}取消收藏</a>
+											  <a href="/iDouBan/ArticleShowServlet?pre_method=article_collection_cancel&method=article_show&article_id=${requestScope.article.articleId}" class="user_operation_btn" id="" >${requestScope.article.collectionNum}取消收藏</a>
 											</c:if> 
 									        <c:if test="${requestScope.collectionStatus == '未收藏文章' }"> 
-											  <a href="/DouBan/ArticleShowServlet?pre_method=article_collection&method=article_show&article_id=${requestScope.article.articleId}" class="user_operation_btn" id="" >${requestScope.article.collectionNum}收藏</a>
+											  <a href="/iDouBan/ArticleShowServlet?pre_method=article_collection&method=article_show&article_id=${requestScope.article.articleId}" class="user_operation_btn" id="" >${requestScope.article.collectionNum}收藏</a>
 											</c:if> 
 									        <!-- 文章转发-->
 									        <c:if test="${requestScope.shareStatus == '已转发文章' }"> 
-											  <a href="/DouBan/ArticleShowServlet?pre_method=article_share_cancel&method=article_show&article_id=${requestScope.article.articleId}" class="user_operation_btn" id="" >${requestScope.article.shareNum}取消转发</a>
+											  <a href="/iDouBan/ArticleShowServlet?pre_method=article_share_cancel&method=article_show&article_id=${requestScope.article.articleId}" class="user_operation_btn" id="" >${requestScope.article.shareNum}取消转发</a>
 											</c:if> 
 									        <c:if test="${requestScope.shareStatus == '未转发文章' }"> 
-											  <a href="/DouBan/ArticleShowServlet?pre_method=article_share&method=article_show&article_id=${requestScope.article.articleId}" class="user_operation_btn" id="" >${requestScope.article.shareNum}转发</a>
+											  <a href="/iDouBan/ArticleShowServlet?pre_method=article_share&method=article_show&article_id=${requestScope.article.articleId}" class="user_operation_btn" id="" >${requestScope.article.shareNum}转发</a>
 											</c:if> 
 
 									         <a href="javascript:void(0);" class="user_operation_btn" id="" >${requestScope.article.commentNum}回应</a>
@@ -535,7 +535,7 @@ textarea{
 				         <div class="comment-form-div" >
 				         
 				          	<%---回复-- 隐藏表单 --%>
-							<form action="/DouBan/ArticleShowServlet?pre_method=reply_content&method=article_show&article_id=${requestScope.article.articleId}" id="replySubmit" name="reply_form" method="post" >
+							<form action="/iDouBan/ArticleShowServlet?pre_method=reply_content&method=article_show&article_id=${requestScope.article.articleId}" id="replySubmit" name="reply_form" method="post" >
 					          	<%--隐藏表单--用来传输文本框的内容--content --%>
 					            <input type="hidden" name="content" id="reply_content" value="">
 					            <%--隐藏表单--评论的id --%>
@@ -546,7 +546,7 @@ textarea{
 							
 							
 							<%--评论--隐藏表单 --%>	
-					        <form action="/DouBan/ArticleShowServlet?pre_method=comment_content&method=article_show&article_id=${requestScope.article.articleId}" id="onSubmit" name="comment_form" method="post" >
+					        <form action="/iDouBan/ArticleShowServlet?pre_method=comment_content&method=article_show&article_id=${requestScope.article.articleId}" id="onSubmit" name="comment_form" method="post" >
 					        	<!-- 发表评论的文本框 -->
 					          <div class="item">
 					              <textarea name="comment-place" required  id="comment-textarea" rows="4" cols="64"></textarea>
@@ -564,7 +564,7 @@ textarea{
 					                </span>
 					           </div>
 					     </div>
-					     <!-- 分页选择链接    /DouBan/ArticleListServlet?method=article_list -->
+					     <!-- 分页选择链接    /iDouBan/ArticleListServlet?method=article_list -->
 						 <div id="paging">
 						 		<span id="page_number">
 								当前第 <strong > <span id ="currentPage_num"> </span> </strong> 页，总共 <strong > <span id="totalPage_num"> </span> </strong> 页             
@@ -755,7 +755,7 @@ textarea{
 		/* 设置xmlHttpRequest对象的回调函数 */
 		xmlHttpRequest.onreadystatechange = callback ;
 		// 异步方式为false 同步处理---为了拿到值
-		xmlHttpRequest.open("post","http://localhost:8080/DouBan/ArticleShowServlet",false);
+		xmlHttpRequest.open("post","http://47.102.212.18/iDouBan/ArticleShowServlet",false);
 		//设置post方式的头信息--文件上传application/x-www-form-urlencoded  multipart/form-data --文件上传不能加这个标头设置
 		xmlHttpRequest.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
 		xmlHttpRequest.send("method=comment_show&article_id="+${requestScope.article.articleId}+"&currentPage="+c); 
@@ -795,7 +795,7 @@ textarea{
 								'						        <!-- 评论的内容-->'+
 								'						        <p id=\"comment-msg\" style="margin: 10px 2px;height: auto;    line-height: 1.6;font-size: 13px;    width: 575px;word-wrap: break-word;overflow: hidden;">'+obj.objects[i].comMsg+
 								'							<a href="#submit-confirm" class=\"reply_a\" id=\"'+obj.objects[i].commentId+'\"  style=\"color : grey;float: right;margin: 9px 2px;\">回复</a>'+
-								'						<a href=\"/DouBan/ArticleShowServlet?pre_method=comment_star&method=article_show&comment_id='+obj.objects[i].commentId+'&article_id='+${requestScope.article.articleId}+'\" class="comment_star_a" id="127" style="color : grey;float: right;margin: 9px 2px;">点赞('+obj.objects[i].comStar+')</a>'+
+								'						<a href=\"/iDouBan/ArticleShowServlet?pre_method=comment_star&method=article_show&comment_id='+obj.objects[i].commentId+'&article_id='+${requestScope.article.articleId}+'\" class="comment_star_a" id="127" style="color : grey;float: right;margin: 9px 2px;">点赞('+obj.objects[i].comStar+')</a>'+
 								'						</p>'+
 								'						    </div>'+
 								'<input type=\"hidden\"   value = \"'+obj.objects[i].commentId+'\">'+
@@ -824,7 +824,7 @@ textarea{
 									'						        <!-- 评论的内容-->'+
 									'						        <p id=\"comment-msg\" style="margin: 10px 2px;height: auto;    line-height: 1.6;font-size: 13px;    width: 575px;word-wrap: break-word;overflow: hidden;">'+obj.objects[i].comMsg+
 									'							<a href="#submit-confirm" class=\"reply_a\" id=\"'+obj.objects[i].commentId+'\"  style=\"color : grey;float: right;margin: 9px 2px;\">回复</a>'+
-									'						<a href=\"/DouBan/ArticleShowServlet?pre_method=comment_star_cancel&method=article_show&comment_id='+obj.objects[i].commentId+'&article_id='+${requestScope.article.articleId}+'\" class="comment_star_a" id="127" style="color : grey;float: right;margin: 9px 2px;">取消点赞('+obj.objects[i].comStar+')</a>'+
+									'						<a href=\"/iDouBan/ArticleShowServlet?pre_method=comment_star_cancel&method=article_show&comment_id='+obj.objects[i].commentId+'&article_id='+${requestScope.article.articleId}+'\" class="comment_star_a" id="127" style="color : grey;float: right;margin: 9px 2px;">取消点赞('+obj.objects[i].comStar+')</a>'+
 									'						</p>'+
 									'						    </div>'+
 									'<input type=\"hidden\"   value = \"'+obj.objects[i].commentId+'\">'+
@@ -874,7 +874,7 @@ textarea{
 		/* 设置xmlHttpRequest对象的回调函数 */
 		xmlHttpRequest.onreadystatechange = callbackReply ;
 		// 异步方式为false 同步处理---为了拿到值
-		xmlHttpRequest.open("post","http://localhost:8080/DouBan/ArticleShowServlet",false);
+		xmlHttpRequest.open("post","http://47.102.212.18/iDouBan/ArticleShowServlet",false);
 		//设置post方式的头信息--文件上传application/x-www-form-urlencoded  multipart/form-data --文件上传不能加这个标头设置
 		xmlHttpRequest.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
 		//url为回复方式

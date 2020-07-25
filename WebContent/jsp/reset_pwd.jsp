@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>重置密码</title>
-<link rel="icon" href="http://localhost:8080/DouBan/icon/douban_favicon.ico" type="image/x-icon">
+<link rel="icon" href="http://47.102.212.18/iDouBan/icon/iDouBan_favicon.ico" type="image/x-icon">
 </head>
 <body>
 
