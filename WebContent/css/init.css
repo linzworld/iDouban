@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/*样式初始化*/
+		*{
+			margin:0;
+			padding:0;/*清除内外边距*/
+		}
+		ul{
+			list-style:none;/*去掉列表中的样式的小点*/
+		}
+		.clearfix:before,.clear:after{/*清除浮动*/
+			display:table;
+			content:"";
+		}
+		.clearfix:after{
+			clear:both;
+		}
+		.clearfix{
+			*zoom:1;
+		}
+		a{
+			text-decoration: none;/*取消下划线*/
+		}
+		input{
+			border:0;/*将input的边框改为0*/
+			box-sizing:border-box;/*CSS3盒子模型 border和padding都包含到width中*/
+		}
+		body{
+			background-color: #FFFFFF;/*整个页面的背景色*/
+		}

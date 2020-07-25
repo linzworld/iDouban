@@ -1,0 +1,130 @@
+		/*样式初始化*/
+		*{
+			margin:0;
+			padding:0;/*清除内外边距*/
+		}
+		ul{
+			list-style:none;/*去掉列表中的样式的小点*/
+		}
+		.clearfix:before,.clear:after{/*清除浮动*/
+			display:table;
+			content:"";
+		}
+		.clearfix:after{
+			clear:both;
+		}
+		.clearfix{
+			*zoom:1;
+		}
+		a{
+			color:#FFFFFF;
+			text-decoration: none;/*取消下划线*/
+		}
+		input{
+			border:0;/*将input的边框改为0*/
+			box-sizing:border-box;/*CSS3盒子模型 border和padding都包含到width中*/
+			
+		}
+		body{
+			background-color: #FFFFFF;/*整个页面的背景色*/
+		}
+		
+		/*顶部的导航栏*/
+		#first_menu{
+			
+			height:22px;
+			background-color: #545652;
+			border-top:3px solid #545652;/* 上边框 */
+			border-bottom: 3px solid #545652;/* 下边框 */
+		}
+		#first_menu a{
+		    float:right;/*右对齐*/ 
+			font-family: 5px;/*字体*/
+			color:#d5d5d5;
+			text-decoration:none;/*取消下划线*/
+			/* width:100px; */
+			padding:8px 12px;/*上下是0，左右是15*/ 
+			height:5px;
+			line-height:5px;/*行高等于高度可以文字垂直居中*/
+		    
+			display:inline-block;/*显示成盒子大小*/
+		}
+		#first_menu a:hover{/*鼠标经过a链接*/
+			background-color: #001D26;
+		}
+		/*带有图标的第二个导航栏*/
+		header{
+			height:74px;
+			/* background-color:pink; */
+			overflow:hidden;/*防止外边距合并的问题*/
+				background-color: #edf4ed;/*设置背景颜色*/
+		}
+		#second{
+			width: 1040px;
+			height:58px;
+			margin-bottom: 50px;
+			margin:8px auto;
+		}
+		/*让图标左浮动*/
+		.logo{
+			float:left;
+			margin-right:50px;/*与右边的选项框相距50个像素*/
+		}
+		/*导航栏的选项*/
+		.navbar{
+			float:left;
+			height:30px;
+			line-height:30px;/*行高会继承 父类*/
+			margin: 15px 0px 0px 0px;/*设置外边距*/
+			
+		}
+		/*导航栏中的具体选项*/
+		.navbar li{
+			float:left;/*使排列成一行*/
+		}
+		.navbar li a{
+			font-family: 33px;/*字体*/
+			color:#072;
+			text-decoration:none;/*取消下划线*/
+			/* width:100px; */
+		
+			padding:0 15px;/*上下是0，左右是15*/ 
+			height:30px;
+			
+			line-height:30px;/*行高等于高度可以文字垂直居中*/
+			display:inline-block;/*显示成盒子大小*/
+		}
+		.navbar li a:hover{/*鼠标经过a链接*/
+			background-color: #6dbc65;/*显示的颜色*/
+		}
+		
+		/*搜索框外框部分--用来使搜索框排列在一行*/
+		.search{
+			float:right;
+			height:30px;
+			line-height:30px;/*行高会继承 父类*/
+			margin-left:50px;/*与左边的logo相距50个像素*/
+			margin-top:15px;/*与顶部边相距15个像素*/	
+			border:1px solid #E1E9E1;/*设置边框边界的大小和颜色*/
+		
+		}
+		/*搜索栏*/
+    	.search input[type=text]{/*选择type属性为text的文本框,无搜索键*/
+			/* background-color: blue; */
+			width:249px;
+			height:30px;
+			padding-left:15px;/*搜索框中的文字与左保持20px距离*/
+			
+				float:left; 
+				
+		} 
+		.search input[type=submit]{/*搜索的按钮*/
+			width:31px;
+			height:30px;
+			/* background-color: pink; */
+				float:left;
+				/*搜素按钮的图片*/
+				background: #FFFFFF url(http://localhost:8080/DouBan/image/01.png) center center no-repeat;
+				background-size:15px 15px;
+		}
+		
