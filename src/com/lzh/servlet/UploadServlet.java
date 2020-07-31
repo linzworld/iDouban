@@ -26,7 +26,7 @@ import com.lzh.util.ImageUrl;
  * @author 林泽鸿
  * @time 2019年4月21日 上午1:41:24
  */
-@MultipartConfig(location="D:/tomcat-9.0.7/image")
+@MultipartConfig(location="/home/tomcat/iDouBan")
 @WebServlet("/UploadServlet")
 public class UploadServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
