@@ -1,5 +1,5 @@
 # iDouban
-📖研发中心工作室二轮考核项目
+📖研发中心工作室二轮考核项目<br>
 ✨ 仿豆瓣的在线博客系统，实现用户简单的登录注册，个人信息管理，好友关系管理，文章管理等功能。<br>
 🏁后端技术栈为Java+Servlet+tomcat+mysql+JSP，前端技术栈为HTML+CSS+JS+Ajax+Jquery。<br>
 🖥️版本：IDE是IntelliJ IDEA 2019.1.3 (Ultimate Edition)+数据库版本为Mysql：5.7.24+Tomcat：8.5.51。<br>
