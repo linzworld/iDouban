@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>所有人</title>
-<link rel="icon" href="http://47.102.212.18/iDouBan/icon/iDouBan_favicon.ico" type="image/x-icon">
+<link rel="icon" href="http:/img.linzworld.cn/img/20200801142359.png" type="image/x-icon">
 
 <!-- 显示所有用户的页面 -->
 

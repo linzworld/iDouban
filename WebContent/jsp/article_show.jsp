@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>文章内容</title>
-<link rel="icon" href="http://47.102.212.18/iDouBan/icon/iDouBan_favicon.ico" type="image/x-icon">
+<link rel="icon" href="http:/img.linzworld.cn/img/20200801142359.png" type="image/x-icon">
 
 <!-- 
 	文章的显示页面
