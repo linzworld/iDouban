@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>我的豆邮</title>
-<link rel="icon" href="http:/img.linzworld.cn/img/20200801142359.png" type="image/x-icon">
+<link rel="icon" href="http://img.linzworld.cn/img/douban_favicon.ico" type="image/x-icon">
 
 <!-- 豆邮的消息列表 -->
 <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>

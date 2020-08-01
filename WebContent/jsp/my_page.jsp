@@ -6,7 +6,7 @@
 	<head>
 	<meta charset="UTF-8">
 	<title>我的主页</title>
-	<link rel="icon" href="http:/img.linzworld.cn/img/20200801142359.png" type="image/x-icon">
+	<link rel="icon" href="http://img.linzworld.cn/img/douban_favicon.ico" type="image/x-icon">
 	<!-- 我的页面的样式 -->
  <link rel="stylesheet" type="text/css" href="http://47.102.212.18/iDouBan/css/my_page.css">
 	</head>

@@ -6,7 +6,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>账号管理</title>
-<link rel="icon" href="http:/img.linzworld.cn/img/20200801142359.png" type="image/x-icon">
+<link rel="icon" href="http://img.linzworld.cn/img/douban_favicon.ico" type="image/x-icon">
 <!-- 登录成功之后，进行个人信息的修改 -->
 <!-- 导航栏 -->
  <link rel="stylesheet" type="text/css" href="http://47.102.212.18/iDouBan/css/header.css">

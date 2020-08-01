@@ -7,7 +7,7 @@
 <head>
 <meta charset="UTF-8">
 <title>写文章</title>
-<link rel="icon" href="http:/img.linzworld.cn/img/20200801142359.png" type="image/x-icon">
+<link rel="icon" href="http://img.linzworld.cn/img/douban_favicon.ico" type="image/x-icon">
 <!-- 样式初始化 -->
 <link rel="stylesheet" type="text/css" href="http://47.102.212.18/iDouBan/css/init.css">
 <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
