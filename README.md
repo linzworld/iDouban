@@ -6,9 +6,21 @@
 🚀纯原生的JavaWeb实现系统的功能。<br>
 ## 项目简介
 本项目为开发一个仿豆瓣的在线博客系统。使用JavaWeb以及Java为主要开发语言。实现用户简单的登录注册，个人信息管理，好友关系管理，文章管理等功能。纯原生的JavaWeb实现系统的功能。
-## 体验账号
-账号：123<br>
-密码：123<br>
+## 启动说明
+该项目是本人的一个JavaWeb练手项目，前期基本都是本地运行的，但是后面改成了远程服务器的地址（项目中是写死了的），以便供大家访问，后续可能会将这个地址进行提取，设置成一个可以进行配置的属性。
+### 本地启动
+1. 本地创建一个文件夹<br>
+2. 将项目克隆到本地<br>
+git clone git@github.com:linzworld/iDouban.git
+3. idea编译器导入JavaWeb项目
+4. 将根目录中的db.properties移动到src目录下，并且修改其中的配置为自己的数据库配置。（db_URL的属性中要使用autoReconnect=true来进行自动连接，否则Mysql连接会失效）
+5. 配置idea中的Project Structure，配置好对应的JDK，artifacts等部分，设置tomcat的启动配置（这部分不会的建议先csdn查下，挺有用的）
+6. 启动项目，访问地址：http://localhost:8080/iDouBan
+### 服务器体验
+1. 体验网址：http://www.linzworld.cn/iDouBan/
+2. 体验账号<br>
+    账号：123<br>
+    密码：123<br>
 ## 项目技术环境
 1. 编程语言：Java
 2. 前端语言：JSP+HTML+CSS+JS+Ajax+Jquery
