@@ -40,12 +40,9 @@ static final String STATUS="status";
  */
 @Override
 	public Msg login(User user)  {
-		
 		try {
 			con = dataSource.getConnection();
 			String sql = "SELECT * FROM user WHERE username = ?";
-			
-			
 			stmt = con.prepareStatement(sql);
 			stmt.setString(1, user.getUsername());
 			ResultSet rs = stmt.executeQuery();
@@ -56,7 +53,6 @@ static final String STATUS="status";
 					//如果数据库中存在该用户，且用户名和密码均相同，则给user对象设置username和password的属性值
 					user.setUsername(rs.getString(USERNAME));
 					user.setPassword(rs.getString(PASSWORD));
-					
 					//判断是否为普通用户
 					if(rs.getInt(STATUS)==0)
 						{

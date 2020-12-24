@@ -1,0 +1,7 @@
+.settings/
+build/
+.idea/
+out/
+DouBan.iml
+WebContent/WEB-INF/classes
+src/db.properties

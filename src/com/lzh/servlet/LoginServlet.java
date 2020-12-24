@@ -75,14 +75,11 @@ public class LoginServlet extends HttpServlet {
         // 图片的验证码
         String text = (String) request.getSession().getAttribute("text");
 
-        
-        if ( !(text.equals(imageText)) ) 
-        {
-            request.setAttribute("errorMsg", "验证码输入错误!");  
+        if ( !(text.equalsIgnoreCase(imageText)) ) {
+            request.setAttribute("errorMsg", "验证码输入错误!");
             request.getRequestDispatcher(LOGIN_VIEW).forward(request, response);
-      	  return;
-        	}
-		  	  			  
+      	    return;
+        }
 			     //访问数据库，将返回结果传送给msg 装信息的对象 
 				msg =us.login(name, pwd);
 					  
