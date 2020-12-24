@@ -13,10 +13,10 @@
 2. 将项目克隆到本地<br>
 git clone git@github.com:linzworld/iDouban.git
 3. idea编译器导入JavaWeb项目
-4. 将根目录中的db.properties移动到src目录下，并且修改其中的配置为自己的数据库配置。（db_URL的属性中要使用autoReconnect=true来进行自动连接，否则Mysql连接会失效）
+4. 将根目录中的 db.properties 移动到 src 目录下，并且修改其中的配置为自己的数据库配置。（db_URL的属性中要使用 autoReconnect=true 来进行自动连接，否则Mysql连接会失效）
 5. 配置idea中的Project Structure，配置好对应的JDK，artifacts等部分，设置tomcat的启动配置（这部分不会的建议先csdn查下，挺有用的）
 6. 启动项目，访问地址：http://localhost:8080/iDouBan
-### 服务器体验
+### 在线体验
 1. 体验网址：http://www.linzworld.cn/iDouBan/
 2. 体验账号<br>
     账号：123<br>
@@ -43,7 +43,7 @@ git clone git@github.com:linzworld/iDouban.git
 Json.jar：
 用于json格式的字符串和java对象之间的转化。
 ## 项目展示
-![](https://gitee.com/linzworld/picgo-img/raw/master/img/20200725144105.png)
+![](http://img.linzworld.cn/img/20201224235856.png)
 ## 项目亮点
 1. 对于jar包，有自己写过一些简单的程序来替代jar包，例如自己手写了个数据库连接池，对于数据库的连接进行了管理。
 2. 一些常修改的文件，通过使用配置文件的方式来进行配置，从而减少代码的耦合度。
