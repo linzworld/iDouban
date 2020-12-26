@@ -1,9 +1,8 @@
-[toc]
 # iDouban
 📖研发中心工作室二轮考核项目<br>
 ✨仿豆瓣的在线博客系统，实现用户简单的登录注册，个人信息管理，好友关系管理，文章管理等功能。<br>
 🏁后端技术栈为Java+Servlet+tomcat+mysql+JSP，前端技术栈为HTML+CSS+JS+Ajax+Jquery。<br>
-🖥️版本：IDE是IntelliJ IDEA 2019.1.3 (Ultimate Edition)+数据库版本为Mysql：5.7.24+Tomcat：8.5.51。<br>
+🖥️版本：IDE是IntelliJ IDEA 2019.1.3 (Ultimate Edition) + 数据库版本为Mysql：5.7.24 + Tomcat：8.5.51。<br>
 🚀纯原生的JavaWeb实现系统的功能。<br>
 ## 项目简介
 本项目为开发一个仿豆瓣的在线博客系统。使用JavaWeb以及Java为主要开发语言。实现用户简单的登录注册，个人信息管理，好友关系管理，文章管理等功能。纯原生的JavaWeb实现系统的功能。
@@ -12,6 +11,7 @@
 2. 体验账号<br>
     账号：123<br>
     密码：123<br>
+    【有问题欢迎提issue讨论学习，看到的话就会进行回复，如果对你有帮助的话，点个star是对本人的最大支持】
 ## 项目展示
 ![](http://img.linzworld.cn/img/20201224235856.png)
 ## 启动说明
