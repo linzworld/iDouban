@@ -11,7 +11,7 @@
 <style type="text/css">
 body {
 	margin: 0;
-	background-image: url('http://47.102.212.18/iDouBan/portrait/登录背景设置.jpg');
+	background-image: url('http://47.102.212.18/iDouBan/image/portrait/登录背景设置.jpg');
 	background-repeat:no-repeat;
         background-position:0% 0%;
 	background-size:contain;

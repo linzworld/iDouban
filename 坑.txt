@@ -1,0 +1,1 @@
+1. 启动时一直无法访问到对应的servlet，但是能访问到对应的jsp文件：最后是在idea中的Project Structure下的module更改对应的导入的jar包，设置为不重复导入
