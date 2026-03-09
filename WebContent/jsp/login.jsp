@@ -117,61 +117,7 @@ body {
 #entry:hover{
     background: blue;
 }
-/*验证码的输入框*/
-#verify_code{
-padding-left: 10px;
-    margin-bottom: 10px;
-    vertical-align:middle/*input img同一行的方法*/ 
-    outline: none;
-    dipslay:inline-block;
-    border-radius: 3px;
-    text-decoration: none;
-    border-style: none;
-    width: 200px;
-    height: 42px;
-    color: black;
-    font-size: 14px;
-        
-}  
-/*验证码图片*/
-#verify_pic{
-    margin-bottom: 10px;
-    outline: none;
-    dipslay:inline-block;
-    border-radius: 3px;
-    text-decoration: none;
-    border-style: none;
-    width: 85px;
-    height: 42px;
-    vertical-align:middle 
 
-}
-/*验证码一行*/
-.verify_inner{
-    dipslay:inline-block;
-
-      margin-bottom: 10px;
-    
-    outline: none;
-    border-radius: 3px;
-    text-decoration: none;
-    border-style: none;
-    width: 300px;
-    height: 42px;
-    color: black;
-    font-size: 14px;
-}
-/*设置换验证码按钮的位置*/
-#btn{
-	margin-left:45px;
-	color:#220903;
-	outline: none;
-	  border-radius: 3px;
-      text-decoration: none;
-      border-style: none;
-      text-color:black;
-      background-color: #edf4ed;
-}
 /*div的设置统一长方形方块*/
 .login_level{
 	 width: 350px;
@@ -229,28 +175,14 @@ padding-left: 10px;
 	   
 	 </div>
 	 
-	 <!-- 验证码的输入框 + 验证码图片 -->
-		 <div id="verify" class="login_level">
-		 <!-- 验证码-->
-		<div class="verify_inner">
-			 	<input type="text" name="image"  placeholder="请输入验证码" id="verify_code">
-		
-				<img src="/iDouBan/VerifyCodeServlet" width="80" height ="42" id="verify_pic">
-		</div>
-		</div>
-			 
-		
-		 <div  id="select"> 
+	 <div  id="select"> 
 		 <label>
 			    <input type="checkbox" name="auto" id="auto"/>自动登录 
 	     </label>
 	      <label>
 			    <input type="checkbox" name="remember" value="" id="remember"/>记住密码
 		 </label>
-		 <label>
-			    <input type="button" value="看不清? 换一张" id="btn">
-		 </label>
-		 </div>
+	 </div>
 		 <div>
 			    <input type="button" onclick="check()" value="登录" id="entry" />
 		</div>
@@ -286,26 +218,14 @@ padding-left: 10px;
     function check(){
         var username = document.getElementById("uname")
         var password = document.getElementById("upwd")
-        var code = document.getElementById("verify_code")
         if(username.value == ""){
             alert("请输入用户名")
         }else if(password.value == ""){
             alert("请输入密码")
-        }else if(code.value == ""){
-            alert("请输入验证码");
         }else{
             document.forms[0].submit()
         }
     }
-     	//按钮点击，更改验证码的图片 动态获取img元素----不用重定位或者转发，在原页面实现验证码图片的转化 
-	    document.getElementById("btn").onclick = function () {
-	        
-	        // 改变src，从而让浏览器发送请求到servlet
-	        //该方法先获取其标签img 再对应的是第一个标签（下标从0开始）
-	        //根据系统时间在点击之后改变验证码
-	        document.getElementsByTagName("img")[0].src =
-	            "/iDouBan/VerifyCodeServlet?time=" + new Date().getTime();
-	    	};
 	</script>
 
 	

@@ -65,22 +65,7 @@ public class LoginServlet extends HttpServlet {
 		        //pwd用md5加密
 				  String pwd = MD5Util.MD5Encode(pwd1,"utf8");
         
-        // 获取请求参数
-        /**
-         *   拿到页面传过来的手动输入的验证码, 
-         *   该验证码要和生成图片上的文本验证码比较, 
-         *   如果相同, 验证码输入成功 
-         */
-        String imageText = request.getParameter("image");
-        // 图片的验证码
-        String text = (String) request.getSession().getAttribute("text");
-
-        if ( !(text.equalsIgnoreCase(imageText)) ) {
-            request.setAttribute("errorMsg", "验证码输入错误!");
-            request.getRequestDispatcher(LOGIN_VIEW).forward(request, response);
-      	    return;
-        }
-			     //访问数据库，将返回结果传送给msg 装信息的对象 
+        //访问数据库，将返回结果传送给msg 装信息的对象 
 				msg =us.login(name, pwd);
 					  
 					   //对不同的结果进行分析，并进行相对应的页面跳转处理
